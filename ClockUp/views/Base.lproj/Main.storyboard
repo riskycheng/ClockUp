@@ -43,18 +43,68 @@
         <!--Item-->
         <scene sceneID="VKH-XC-2cH">
             <objects>
-                <viewController id="Yg9-b2-r0D" userLabel="Item" sceneMemberID="viewController">
+                <viewController id="Yg9-b2-r0D" userLabel="Item" customClass="MainActionViewController" customModule="ClockUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lUK-f0-EXa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tvF-Vb-hhj">
+                                <rect key="frame" x="56.666666666666657" y="133" width="280" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20:00:01.1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWM-qN-1Gt">
+                                        <rect key="frame" x="49" y="18" width="182" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" systemColor="systemGray5Color"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="Ghm-vF-DSc"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dWM-qN-1Gt" secondAttribute="trailing" constant="20" symbolic="YES" id="VhM-4p-cMt"/>
+                                    <constraint firstItem="dWM-qN-1Gt" firstAttribute="top" secondItem="tvF-Vb-hhj" secondAttribute="top" constant="18" id="aM2-ID-C6J"/>
+                                    <constraint firstAttribute="height" constant="120" id="jQs-iG-PxZ"/>
+                                    <constraint firstItem="dWM-qN-1Gt" firstAttribute="leading" secondItem="tvF-Vb-hhj" secondAttribute="leading" constant="49" id="vKA-CT-T63"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抢购时钟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdw-fb-220">
+                                <rect key="frame" x="20" y="69" width="82" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="aIn-gP-3za"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vdw-fb-220" firstAttribute="leading" secondItem="aIn-gP-3za" secondAttribute="leading" constant="20" id="5aF-AF-GoU"/>
+                            <constraint firstItem="vdw-fb-220" firstAttribute="top" secondItem="aIn-gP-3za" secondAttribute="top" constant="10" id="DRs-Qd-q1E"/>
+                            <constraint firstItem="aIn-gP-3za" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vdw-fb-220" secondAttribute="trailing" symbolic="YES" id="GT9-bd-e1v"/>
+                            <constraint firstItem="tvF-Vb-hhj" firstAttribute="centerX" secondItem="lUK-f0-EXa" secondAttribute="centerX" id="Jo2-3q-FmG"/>
+                            <constraint firstItem="tvF-Vb-hhj" firstAttribute="centerX" secondItem="lUK-f0-EXa" secondAttribute="centerX" id="KNM-uz-uGM"/>
+                            <constraint firstItem="tvF-Vb-hhj" firstAttribute="top" secondItem="vdw-fb-220" secondAttribute="bottom" constant="40" id="eVZ-x3-510"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="悬浮时间" image="house.fill" catalog="system" id="laP-Tt-tVZ" userLabel="悬浮时间"/>
+                    <connections>
+                        <outlet property="timeLabel" destination="dWM-qN-1Gt" id="mX1-05-ILy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGf-dw-e5P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="706" y="-360"/>
+            <point key="canvasLocation" x="704.58015267175574" y="-360.56338028169017"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="jO5-Wh-5nD">
@@ -82,6 +132,12 @@
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
