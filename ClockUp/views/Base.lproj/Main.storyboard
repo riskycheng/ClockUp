@@ -8,33 +8,49 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--item-->
         <scene sceneID="BfA-aI-htx">
             <objects>
-                <viewController id="RuV-BZ-RTW" sceneMemberID="viewController">
+                <viewController id="RuV-BZ-RTW" userLabel="item" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kvb-0N-rcU">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="eeY-e6-8ib"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="vRv-xR-Ff3"/>
+                    <tabBarItem key="tabBarItem" title="秒杀事件" image="alarm.fill" catalog="system" id="vRv-xR-Ff3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1tk-JQ-hLg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="706" y="246"/>
         </scene>
-        <!--Item 1-->
+        <!--设置-->
+        <scene sceneID="4CO-ct-1SZ">
+            <objects>
+                <viewController id="z7p-7E-ofS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7BH-T3-Scx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bE3-P5-Ujh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="设置" image="gearshape.fill" catalog="system" id="bKz-ok-FW1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fWe-2q-ctf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="705" y="901"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="VKH-XC-2cH">
             <objects>
-                <viewController id="Yg9-b2-r0D" sceneMemberID="viewController">
+                <viewController id="Yg9-b2-r0D" userLabel="Item" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lUK-f0-EXa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="aIn-gP-3za"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="laP-Tt-tVZ"/>
+                    <tabBarItem key="tabBarItem" title="悬浮时间" image="house.fill" catalog="system" id="laP-Tt-tVZ" userLabel="悬浮时间"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGf-dw-e5P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,14 +68,18 @@
                     <connections>
                         <segue destination="Yg9-b2-r0D" kind="relationship" relationship="viewControllers" id="FzA-vd-bbh"/>
                         <segue destination="RuV-BZ-RTW" kind="relationship" relationship="viewControllers" id="x8C-1R-la5"/>
+                        <segue destination="z7p-7E-ofS" kind="relationship" relationship="viewControllers" id="uus-mE-0sh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Tz-AD-Eyb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-199" y="-56"/>
+            <point key="canvasLocation" x="-779" y="317"/>
         </scene>
     </scenes>
     <resources>
+        <image name="alarm.fill" catalog="system" width="123" height="128"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
