@@ -10,6 +10,7 @@ import UIKit
 class MainActionViewController: UIViewController {
 
     @IBOutlet weak var displayModeBtn: UIButton!
+    @IBOutlet weak var timerFormatModeBtn: UIButton!
     @IBOutlet weak var timeLabel: UILabel!
     var timer: Timer?
     
@@ -19,6 +20,8 @@ class MainActionViewController: UIViewController {
         startTimer()
         
         setupDisplayMode()
+        
+        setupTimeFormatMode()
     }
     
     func setupDisplayMode() {
@@ -33,6 +36,25 @@ class MainActionViewController: UIViewController {
             }),
             UIAction(title: "实时网速", handler: { action in
                 print("selected 实时网速")
+            })
+        ])
+    }
+    
+    func setupTimeFormatMode() {
+        timerFormatModeBtn.showsMenuAsPrimaryAction = true
+        timerFormatModeBtn.changesSelectionAsPrimaryAction = true
+        timerFormatModeBtn.menu = UIMenu(children: [
+            UIAction(title: "时:分:秒:毫秒", handler: { action in
+                print("selected 时:分:秒:毫秒")
+            }),
+            UIAction(title: "分:秒:毫秒", handler: { action in
+                print("selected 分:秒:毫秒")
+            }),
+            UIAction(title: "秒:毫秒", handler: { action in
+                print("selected 秒:毫秒")
+            }),
+            UIAction(title: "毫秒", handler: { action in
+                print("selected 毫秒")
             })
         ])
     }
