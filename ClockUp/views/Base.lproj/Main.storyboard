@@ -209,6 +209,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="悬浮时间" image="house.fill" catalog="system" id="laP-Tt-tVZ" userLabel="悬浮时间"/>
                     <connections>
+                        <outlet property="displayModeBtn" destination="Zxb-RX-V4x" id="CVr-aH-sNW"/>
                         <outlet property="timeLabel" destination="dWM-qN-1Gt" id="mX1-05-ILy"/>
                     </connections>
                 </viewController>

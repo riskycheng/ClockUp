@@ -9,6 +9,7 @@ import UIKit
 
 class MainActionViewController: UIViewController {
 
+    @IBOutlet weak var displayModeBtn: UIButton!
     @IBOutlet weak var timeLabel: UILabel!
     var timer: Timer?
     
@@ -16,6 +17,24 @@ class MainActionViewController: UIViewController {
         super.viewDidLoad()
 
         startTimer()
+        
+        setupDisplayMode()
+    }
+    
+    func setupDisplayMode() {
+        displayModeBtn.showsMenuAsPrimaryAction = true
+        displayModeBtn.changesSelectionAsPrimaryAction = true
+        displayModeBtn.menu = UIMenu(children: [
+            UIAction(title: "时钟", handler: { action in
+                print("selected 时钟")
+            }),
+            UIAction(title: "刷新率", handler: { action in
+                print("selected 刷新率")
+            }),
+            UIAction(title: "实时网速", handler: { action in
+                print("selected 实时网速")
+            })
+        ])
     }
     
 
