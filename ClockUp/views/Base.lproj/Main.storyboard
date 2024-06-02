@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="eeY-e6-8ib"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.8315508962" green="0.86974155900000005" blue="0.84761893749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="秒杀事件" image="alarm.fill" catalog="system" id="vRv-xR-Ff3"/>
                 </viewController>
@@ -34,7 +34,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="bE3-P5-Ujh"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.8315508962" green="0.86974155900000005" blue="0.84761893749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="设置" image="gearshape.fill" catalog="system" id="bKz-ok-FW1"/>
                 </viewController>
@@ -45,7 +45,7 @@
         <!--Item-->
         <scene sceneID="VKH-XC-2cH">
             <objects>
-                <viewController id="Yg9-b2-r0D" userLabel="Item" customClass="MainActionViewController" customModule="ClockUp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="抢购时钟" title="抢购时钟" interactionActivityTrackingBaseName="抢购时钟" id="Yg9-b2-r0D" userLabel="Item" customClass="MainActionViewController" customModule="ClockUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lUK-f0-EXa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,8 +110,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="启动悬浮窗">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
-                                    <color key="baseForegroundColor" systemColor="tableCellBlueTextColor"/>
-                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseForegroundColor" systemColor="tableBackgroundColor"/>
+                                    <color key="baseBackgroundColor" systemColor="tableCellBlueTextColor"/>
                                 </buttonConfiguration>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="a6D-87-feS" userLabel="Stack View_ROW1">
@@ -439,7 +439,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aIn-gP-3za"/>
-                        <color key="backgroundColor" red="0.80741745229999995" green="0.90324372050000001" blue="0.99778896569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.83290752220881614" green="0.87058823529999996" blue="0.84679671069619666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vdw-fb-220" firstAttribute="leading" secondItem="aIn-gP-3za" secondAttribute="leading" constant="16" id="3gm-11-vHi"/>
@@ -505,6 +505,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tableBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tableCellBlueTextColor">
             <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
