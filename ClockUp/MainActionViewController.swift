@@ -9,8 +9,11 @@ import UIKit
 
 class MainActionViewController: UIViewController {
 
+    
+    @IBOutlet weak var timeFormatLabel: UIButton!
+    
     @IBOutlet weak var displayModeBtn: UIButton!
-    @IBOutlet weak var timerFormatModeBtn: UIButton!
+    
     @IBOutlet weak var timeLabel: UILabel!
     var timer: Timer?
     
@@ -19,9 +22,9 @@ class MainActionViewController: UIViewController {
 
         startTimer()
         
-        //setupDisplayMode()
+        setupDisplayMode()
         
-        //setupTimeFormatMode()
+        setupTimeFormatMode()
     }
     
     func setupDisplayMode() {
@@ -41,9 +44,9 @@ class MainActionViewController: UIViewController {
     }
     
     func setupTimeFormatMode() {
-        timerFormatModeBtn.showsMenuAsPrimaryAction = true
-        timerFormatModeBtn.changesSelectionAsPrimaryAction = true
-        timerFormatModeBtn.menu = UIMenu(children: [
+        timeFormatLabel.showsMenuAsPrimaryAction = true
+        timeFormatLabel.changesSelectionAsPrimaryAction = true
+        timeFormatLabel.menu = UIMenu(children: [
             UIAction(title: "时:分:秒:毫秒", handler: { action in
                 print("selected 时:分:秒:毫秒")
             }),
