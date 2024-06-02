@@ -19,9 +19,9 @@ class MainActionViewController: UIViewController {
 
         startTimer()
         
-        setupDisplayMode()
+        //setupDisplayMode()
         
-        setupTimeFormatMode()
+        //setupTimeFormatMode()
     }
     
     func setupDisplayMode() {
