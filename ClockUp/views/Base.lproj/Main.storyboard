@@ -159,7 +159,6 @@
                                                             <constraint firstAttribute="height" constant="30" id="0L5-4w-Y1T"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="1GV-sT-Ayu"/>
                                                             <constraint firstAttribute="width" constant="30" id="VgN-0K-ixF"/>
-                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="20" id="hpX-Ly-LQm"/>
                                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="30" id="kFG-N5-XpR"/>
                                                         </constraints>
                                                         <menu key="menu" id="3rN-dR-abr">
