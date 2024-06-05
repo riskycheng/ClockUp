@@ -57,14 +57,37 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tvF-Vb-hhj">
                                         <rect key="frame" x="0.0" y="0.0" width="359" height="120"/>
                                         <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CalendarCustomized" translatesAutoresizingMaskIntoConstraints="NO" id="q2Y-VU-UAQ">
+                                                <rect key="frame" x="20" y="11" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="lqI-J6-squ"/>
+                                                    <constraint firstAttribute="height" constant="100" id="pRW-9D-Zug"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGb-jn-052">
+                                                <rect key="frame" x="40" y="51" width="60" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Eba-if-652"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="I0U-Dk-i7X"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="USg-H2-JPm"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="ohH-eh-lHl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="28"/>
+                                                <color key="textColor" red="0.95993155240000005" green="0.96932691339999999" blue="0.98379927869999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20:00:01.1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWM-qN-1Gt">
-                                                <rect key="frame" x="189" y="36" width="150" height="50"/>
+                                                <rect key="frame" x="143" y="35" width="200" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="2XI-QR-OhH"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="5kb-Yf-vcW"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="9Eo-Vp-89H"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="CY1-BF-7su"/>
+                                                    <constraint firstAttribute="height" constant="50" id="Lud-bZ-gkf"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="TGc-Wp-qub"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="X19-0P-IV6"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <color key="textColor" systemColor="systemGray5Color"/>
                                                 <nil key="highlightedColor"/>
                                                 <userDefinedRuntimeAttributes>
@@ -74,23 +97,18 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="q2Y-VU-UAQ">
-                                                <rect key="frame" x="20" y="12" width="100" height="98.666666666666671"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="crC-ii-1Rb"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="lqI-J6-squ"/>
-                                                    <constraint firstAttribute="height" constant="100" id="pRW-9D-Zug"/>
-                                                </constraints>
-                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" name="TimerTitleBlue"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="dWM-qN-1Gt" secondAttribute="trailing" constant="20" id="Czd-Tq-a1p"/>
-                                            <constraint firstItem="dWM-qN-1Gt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="q2Y-VU-UAQ" secondAttribute="trailing" constant="8" symbolic="YES" id="Fgi-0z-XAs"/>
-                                            <constraint firstItem="dWM-qN-1Gt" firstAttribute="centerY" secondItem="q2Y-VU-UAQ" secondAttribute="centerY" id="MSh-jE-lly"/>
-                                            <constraint firstItem="dWM-qN-1Gt" firstAttribute="top" secondItem="tvF-Vb-hhj" secondAttribute="top" constant="36" id="mhW-PN-WaC"/>
-                                            <constraint firstItem="q2Y-VU-UAQ" firstAttribute="leading" secondItem="tvF-Vb-hhj" secondAttribute="leading" constant="20" id="xEb-1y-GKN"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="yg2-E7-mBQ"/>
+                                            <constraint firstItem="dWM-qN-1Gt" firstAttribute="leading" secondItem="q2Y-VU-UAQ" secondAttribute="trailing" constant="23" id="3T8-oE-U4F"/>
+                                            <constraint firstItem="dWM-qN-1Gt" firstAttribute="leading" secondItem="tvF-Vb-hhj" secondAttribute="leading" constant="143" id="7Lm-tF-QIi"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dWM-qN-1Gt" secondAttribute="trailing" constant="16" id="F8j-SH-BP2"/>
+                                            <constraint firstItem="q2Y-VU-UAQ" firstAttribute="top" secondItem="tvF-Vb-hhj" secondAttribute="top" constant="11" id="PYO-9Y-YjF"/>
+                                            <constraint firstItem="YGb-jn-052" firstAttribute="centerY" secondItem="dWM-qN-1Gt" secondAttribute="centerY" constant="6" id="VUX-TD-3gu"/>
+                                            <constraint firstItem="YGb-jn-052" firstAttribute="centerX" secondItem="q2Y-VU-UAQ" secondAttribute="centerX" id="ikm-Bw-TCF"/>
+                                            <constraint firstItem="q2Y-VU-UAQ" firstAttribute="leading" secondItem="tvF-Vb-hhj" secondAttribute="leading" constant="20" id="mFt-1Z-l1O"/>
+                                            <constraint firstItem="dWM-qN-1Gt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="q2Y-VU-UAQ" secondAttribute="trailing" constant="-90" id="mN8-zI-sVd"/>
+                                            <constraint firstItem="dWM-qN-1Gt" firstAttribute="top" secondItem="tvF-Vb-hhj" secondAttribute="top" constant="35" id="mhW-PN-WaC"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -114,19 +132,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrS-JN-waB">
-                                <rect key="frame" x="116" y="269" width="161" height="70"/>
+                                <rect key="frame" x="166.66666666666666" y="269" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="kcA-OA-BHq"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="5p6-ho-MFs"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="QiH-pZ-XXb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Z04-qh-NrQ"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="eNf-Ni-eY3"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="启动悬浮窗">
+                                <buttonConfiguration key="configuration" style="filled" title="R">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                     <color key="baseForegroundColor" systemColor="tableBackgroundColor"/>
                                     <color key="baseBackgroundColor" systemColor="tableCellBlueTextColor"/>
                                 </buttonConfiguration>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="a6D-87-feS" userLabel="Stack View_ROW1">
-                                <rect key="frame" x="17" y="379" width="359" height="120"/>
+                                <rect key="frame" x="17" y="369" width="359" height="120"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MGd-e5-lCp" userLabel="Stack View_时钟格式">
                                         <rect key="frame" x="0.0" y="0.0" width="160" height="120"/>
@@ -302,7 +323,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="YUm-bU-t3C" userLabel="Stack View_ROW2">
-                                <rect key="frame" x="16.666666666666657" y="539" width="360" height="120"/>
+                                <rect key="frame" x="16.666666666666657" y="529" width="360" height="120"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NhW-jt-ZUN" userLabel="Stack View_倒计时">
                                         <rect key="frame" x="0.0" y="0.0" width="160" height="120"/>
@@ -453,12 +474,11 @@
                         <color key="backgroundColor" red="0.95993155240000005" green="0.96932691339999999" blue="0.98379927869999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="KEr-50-lfL" firstAttribute="leading" secondItem="a6D-87-feS" secondAttribute="leading" id="18d-cN-4GI"/>
                             <constraint firstItem="vdw-fb-220" firstAttribute="leading" secondItem="aIn-gP-3za" secondAttribute="leading" constant="16" id="3gm-11-vHi"/>
-                            <constraint firstItem="vrS-JN-waB" firstAttribute="leading" secondItem="aIn-gP-3za" secondAttribute="leading" constant="116" id="B78-If-0Yz"/>
                             <constraint firstItem="vdw-fb-220" firstAttribute="top" secondItem="aIn-gP-3za" secondAttribute="top" constant="10" id="DRs-Qd-q1E"/>
                             <constraint firstItem="a6D-87-feS" firstAttribute="centerX" secondItem="lUK-f0-EXa" secondAttribute="centerX" id="Egv-Oy-ROD"/>
                             <constraint firstItem="YUm-bU-t3C" firstAttribute="centerX" secondItem="lUK-f0-EXa" secondAttribute="centerX" id="Fmo-a0-tKb"/>
-                            <constraint firstItem="KEr-50-lfL" firstAttribute="leading" secondItem="aIn-gP-3za" secondAttribute="leading" constant="17" id="GON-Wj-uDS"/>
                             <constraint firstItem="aIn-gP-3za" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vdw-fb-220" secondAttribute="trailing" id="GT9-bd-e1v"/>
                             <constraint firstItem="YUm-bU-t3C" firstAttribute="centerX" secondItem="lUK-f0-EXa" secondAttribute="centerX" id="HIs-Da-Zwt"/>
                             <constraint firstItem="KEr-50-lfL" firstAttribute="centerX" secondItem="vrS-JN-waB" secondAttribute="centerX" id="JdE-J3-Big"/>
@@ -467,7 +487,7 @@
                             <constraint firstItem="vrS-JN-waB" firstAttribute="top" secondItem="KEr-50-lfL" secondAttribute="bottom" constant="30" id="cRF-uT-kUS"/>
                             <constraint firstItem="vrS-JN-waB" firstAttribute="centerX" secondItem="lUK-f0-EXa" secondAttribute="centerX" id="ioE-vm-nTz"/>
                             <constraint firstItem="KEr-50-lfL" firstAttribute="top" secondItem="vdw-fb-220" secondAttribute="bottom" constant="30" id="oPA-Tm-FBT"/>
-                            <constraint firstItem="aIn-gP-3za" firstAttribute="trailing" secondItem="KEr-50-lfL" secondAttribute="trailing" constant="17" id="tuX-aY-Xak"/>
+                            <constraint firstItem="vrS-JN-waB" firstAttribute="centerX" secondItem="lUK-f0-EXa" secondAttribute="centerX" id="wXt-fF-AML"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="悬浮时间" image="house.fill" catalog="system" id="laP-Tt-tVZ" userLabel="悬浮时间"/>
@@ -502,8 +522,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CalendarCustomized" width="42.666667938232422" height="42.666667938232422"/>
         <image name="alarm.fill" catalog="system" width="123" height="128"/>
-        <image name="clock.circle" catalog="system" width="128" height="123"/>
         <image name="displayModeCustomized" width="42.666667938232422" height="42.666667938232422"/>
         <image name="gearshape.fill" catalog="system" width="128" height="123"/>
         <image name="hourglassCustomized" width="66.666664123535156" height="66.666664123535156"/>
