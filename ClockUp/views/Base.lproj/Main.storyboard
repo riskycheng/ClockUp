@@ -155,19 +155,24 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrS-JN-waB">
-                                <rect key="frame" x="166.66666666666666" y="269" width="60" height="60"/>
+                                <rect key="frame" x="86.666666666666686" y="269" width="220" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="5p6-ho-MFs"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="QiH-pZ-XXb"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Z04-qh-NrQ"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="eNf-Ni-eY3"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="1Xu-og-S7c"/>
+                                    <constraint firstAttribute="height" constant="60" id="fys-6x-7D7"/>
+                                    <constraint firstAttribute="width" constant="220" id="lhm-jy-JlD"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="R">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                <buttonConfiguration key="configuration" style="filled" title="启动悬浮时间">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                                     <color key="baseForegroundColor" systemColor="tableBackgroundColor"/>
-                                    <color key="baseBackgroundColor" systemColor="tableCellBlueTextColor"/>
+                                    <color key="baseBackgroundColor" red="0.11372549830000001" green="0.2352941036" blue="0.47843140360000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="a6D-87-feS" userLabel="Stack View_ROW1">
                                 <rect key="frame" x="17" y="369" width="359" height="120"/>
@@ -565,21 +570,20 @@
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="KEr-50-lfL" firstAttribute="leading" secondItem="a6D-87-feS" secondAttribute="leading" id="18d-cN-4GI"/>
+                            <constraint firstItem="a6D-87-feS" firstAttribute="top" secondItem="vrS-JN-waB" secondAttribute="bottom" constant="40" id="39f-QO-vaI"/>
                             <constraint firstItem="vdw-fb-220" firstAttribute="leading" secondItem="aIn-gP-3za" secondAttribute="leading" constant="16" id="3gm-11-vHi"/>
                             <constraint firstItem="dum-pT-fui" firstAttribute="leading" secondItem="vdw-fb-220" secondAttribute="leading" id="7xD-Ck-8Qe"/>
                             <constraint firstItem="vdw-fb-220" firstAttribute="top" secondItem="aIn-gP-3za" secondAttribute="top" constant="10" id="DRs-Qd-q1E"/>
+                            <constraint firstItem="KEr-50-lfL" firstAttribute="trailing" secondItem="a6D-87-feS" secondAttribute="trailing" id="DZy-dk-abY"/>
                             <constraint firstItem="a6D-87-feS" firstAttribute="centerX" secondItem="lUK-f0-EXa" secondAttribute="centerX" id="Egv-Oy-ROD"/>
                             <constraint firstItem="YUm-bU-t3C" firstAttribute="centerX" secondItem="lUK-f0-EXa" secondAttribute="centerX" id="Fmo-a0-tKb"/>
                             <constraint firstItem="aIn-gP-3za" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vdw-fb-220" secondAttribute="trailing" id="GT9-bd-e1v"/>
                             <constraint firstItem="YUm-bU-t3C" firstAttribute="centerX" secondItem="lUK-f0-EXa" secondAttribute="centerX" id="HIs-Da-Zwt"/>
-                            <constraint firstItem="KEr-50-lfL" firstAttribute="centerX" secondItem="vrS-JN-waB" secondAttribute="centerX" id="JdE-J3-Big"/>
                             <constraint firstItem="aIn-gP-3za" firstAttribute="bottom" secondItem="dum-pT-fui" secondAttribute="bottom" constant="20" id="MXe-h8-vbA"/>
-                            <constraint firstItem="a6D-87-feS" firstAttribute="top" secondItem="vrS-JN-waB" secondAttribute="bottom" constant="40" id="aEe-pr-z6p"/>
+                            <constraint firstItem="vrS-JN-waB" firstAttribute="top" secondItem="KEr-50-lfL" secondAttribute="bottom" constant="30" id="YxR-Ld-eth"/>
                             <constraint firstItem="YUm-bU-t3C" firstAttribute="top" secondItem="a6D-87-feS" secondAttribute="bottom" constant="40" id="cMH-bB-bth"/>
-                            <constraint firstItem="vrS-JN-waB" firstAttribute="top" secondItem="KEr-50-lfL" secondAttribute="bottom" constant="30" id="cRF-uT-kUS"/>
-                            <constraint firstItem="vrS-JN-waB" firstAttribute="centerX" secondItem="lUK-f0-EXa" secondAttribute="centerX" id="ioE-vm-nTz"/>
                             <constraint firstItem="KEr-50-lfL" firstAttribute="top" secondItem="vdw-fb-220" secondAttribute="bottom" constant="30" id="oPA-Tm-FBT"/>
-                            <constraint firstItem="vrS-JN-waB" firstAttribute="centerX" secondItem="lUK-f0-EXa" secondAttribute="centerX" id="wXt-fF-AML"/>
+                            <constraint firstItem="vrS-JN-waB" firstAttribute="centerX" secondItem="lUK-f0-EXa" secondAttribute="centerX" id="yJg-al-Kiz"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="悬浮时间" image="house.fill" catalog="system" id="laP-Tt-tVZ" userLabel="悬浮时间"/>
@@ -639,9 +643,6 @@
         </systemColor>
         <systemColor name="tableBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="tableCellBlueTextColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
