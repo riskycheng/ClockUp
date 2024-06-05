@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "hourglass_64.png",
+      "filename" : "hourglass_32.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "hourglass_128.png",
+      "filename" : "hourglass_64.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "hourglass_200x.png",
+      "filename" : "hourglass_128.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
