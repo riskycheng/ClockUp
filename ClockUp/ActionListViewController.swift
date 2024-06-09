@@ -17,7 +17,7 @@ class ActionListViewController: UIViewController {
         super.viewDidLoad()
         
         // Load the GIF file from assets
-        guard let gifData = NSDataAsset(name: "plants_anim")?.data else {
+        guard let gifData = NSDataAsset(name: "mailbox_anim")?.data else {
             print("GIF file not found in assets")
             return
         }
