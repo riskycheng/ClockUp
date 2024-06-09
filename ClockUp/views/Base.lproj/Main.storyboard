@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--item-->
+        <!--代办-->
         <scene sceneID="BfA-aI-htx">
             <objects>
-                <viewController id="RuV-BZ-RTW" userLabel="item" customClass="ActionListViewController" customModule="ClockUp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="代办" id="RuV-BZ-RTW" customClass="ActionListViewController" customModule="ClockUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kvb-0N-rcU">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,6 +68,8 @@
                             <constraint firstItem="sq9-jE-5n7" firstAttribute="top" secondItem="eeY-e6-8ib" secondAttribute="top" constant="100" id="Azs-8F-16K"/>
                             <constraint firstItem="gJt-Gb-7bS" firstAttribute="leading" secondItem="eeY-e6-8ib" secondAttribute="leading" constant="16" id="D4l-SO-oI5"/>
                             <constraint firstItem="eeY-e6-8ib" firstAttribute="trailing" secondItem="Yn1-ZP-OV7" secondAttribute="trailing" constant="-20" id="HhE-W7-dCG"/>
+                            <constraint firstItem="gJt-Gb-7bS" firstAttribute="top" secondItem="kvb-0N-rcU" secondAttribute="top" constant="69" id="SA4-VK-IMq"/>
+                            <constraint firstItem="gJt-Gb-7bS" firstAttribute="top" secondItem="eeY-e6-8ib" secondAttribute="top" constant="10" id="Smq-uj-tTk"/>
                             <constraint firstItem="gJt-Gb-7bS" firstAttribute="leading" secondItem="kvb-0N-rcU" secondAttribute="leadingMargin" id="VXA-PH-IFU"/>
                             <constraint firstItem="ixG-aH-2jq" firstAttribute="bottom" secondItem="eeY-e6-8ib" secondAttribute="bottom" constant="-33" id="dai-Zh-9yI"/>
                             <constraint firstAttribute="trailing" secondItem="sq9-jE-5n7" secondAttribute="trailing" id="gLN-mK-LpD"/>
@@ -92,7 +94,7 @@
         <!--设置-->
         <scene sceneID="4CO-ct-1SZ">
             <objects>
-                <viewController id="z7p-7E-ofS" customClass="SettingsViewController" customModule="ClockUp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="设置" id="z7p-7E-ofS" customClass="SettingsViewController" customModule="ClockUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7BH-T3-Scx">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -180,6 +182,8 @@
                             <constraint firstItem="WvG-kV-EkP" firstAttribute="top" secondItem="bE3-P5-Ujh" secondAttribute="top" constant="10" id="JkV-zv-H42"/>
                             <constraint firstItem="bE3-P5-Ujh" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2jd-gI-W8k" secondAttribute="trailing" symbolic="YES" id="KgM-Jk-dHE"/>
                             <constraint firstItem="fea-5T-hvY" firstAttribute="leading" secondItem="7BH-T3-Scx" secondAttribute="leading" id="YwZ-8E-gJ6"/>
+                            <constraint firstItem="WvG-kV-EkP" firstAttribute="top" secondItem="7BH-T3-Scx" secondAttribute="top" constant="69" id="Z9S-SB-zwV"/>
+                            <constraint firstItem="WvG-kV-EkP" firstAttribute="top" secondItem="bE3-P5-Ujh" secondAttribute="top" constant="10" id="ZDD-jG-wYS"/>
                             <constraint firstItem="fea-5T-hvY" firstAttribute="bottom" secondItem="bE3-P5-Ujh" secondAttribute="bottom" id="ZiE-dq-gGw"/>
                             <constraint firstItem="bE3-P5-Ujh" firstAttribute="bottom" secondItem="8L9-Ko-UPl" secondAttribute="bottom" constant="36" id="aQn-z9-tnI"/>
                             <constraint firstItem="8L9-Ko-UPl" firstAttribute="trailing" secondItem="fea-5T-hvY" secondAttribute="trailing" id="bmP-Gt-CNl"/>
@@ -201,10 +205,83 @@
             </objects>
             <point key="canvasLocation" x="704.58015267175574" y="900.70422535211276"/>
         </scene>
-        <!--Item-->
+        <!--首页-->
+        <scene sceneID="Niy-5N-EQc">
+            <objects>
+                <viewController title="首页" id="5kz-Ra-PeI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xW5-HT-212">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="beb-lw-DNF">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="467"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抢购时钟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64S-7H-yd6">
+                                        <rect key="frame" x="16" y="69" width="200" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="98E-06-5xe"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="DQw-sJ-ylm"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="RGN-Ud-jXw"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="Sds-Xg-esH"/>
+                                            <constraint firstAttribute="height" constant="30" id="hgT-KB-gpL"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="ids-SF-kPZ"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="pbs-3V-6cD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstItem="64S-7H-yd6" firstAttribute="leading" secondItem="beb-lw-DNF" secondAttribute="leading" constant="16" id="9hP-2l-b9S"/>
+                                    <constraint firstItem="64S-7H-yd6" firstAttribute="top" secondItem="beb-lw-DNF" secondAttribute="top" constant="69" id="CK3-1c-xhr"/>
+                                    <constraint firstItem="64S-7H-yd6" firstAttribute="leading" secondItem="beb-lw-DNF" secondAttribute="leading" constant="16" id="Czr-4M-gbg"/>
+                                    <constraint firstItem="64S-7H-yd6" firstAttribute="leading" secondItem="beb-lw-DNF" secondAttribute="leading" constant="16" id="Ia2-WG-vTL"/>
+                                    <constraint firstItem="64S-7H-yd6" firstAttribute="leading" secondItem="beb-lw-DNF" secondAttribute="leading" constant="16" id="KqS-ZM-1hp"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="64S-7H-yd6" secondAttribute="trailing" constant="20" symbolic="YES" id="X8D-lf-Ho3"/>
+                                    <constraint firstItem="64S-7H-yd6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="beb-lw-DNF" secondAttribute="leading" constant="16" id="c2r-le-xmm"/>
+                                    <constraint firstItem="64S-7H-yd6" firstAttribute="top" secondItem="beb-lw-DNF" secondAttribute="top" constant="69" id="dsb-B6-lzf"/>
+                                    <constraint firstItem="64S-7H-yd6" firstAttribute="leading" secondItem="beb-lw-DNF" secondAttribute="leading" constant="16" id="jhg-6g-4xH"/>
+                                    <constraint firstItem="64S-7H-yd6" firstAttribute="leading" secondItem="beb-lw-DNF" secondAttribute="leadingMargin" constant="8" id="kSu-Bf-gyj"/>
+                                    <constraint firstItem="64S-7H-yd6" firstAttribute="top" secondItem="beb-lw-DNF" secondAttribute="top" constant="69" id="rXJ-kw-mLW"/>
+                                    <constraint firstItem="64S-7H-yd6" firstAttribute="leading" secondItem="beb-lw-DNF" secondAttribute="leading" constant="16" id="sMi-sn-rIo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R91-Vt-5wT">
+                                <rect key="frame" x="0.0" y="159" width="393" height="610"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5t0-jN-PQU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="R91-Vt-5wT" firstAttribute="bottom" secondItem="5t0-jN-PQU" secondAttribute="bottom" id="IL4-vR-c8k"/>
+                            <constraint firstAttribute="trailing" secondItem="beb-lw-DNF" secondAttribute="trailing" id="NXW-6G-sXl"/>
+                            <constraint firstItem="beb-lw-DNF" firstAttribute="trailing" secondItem="R91-Vt-5wT" secondAttribute="trailing" id="Pdg-3h-QUH"/>
+                            <constraint firstItem="beb-lw-DNF" firstAttribute="leading" secondItem="xW5-HT-212" secondAttribute="leading" id="TGi-dF-qaZ"/>
+                            <constraint firstItem="R91-Vt-5wT" firstAttribute="top" secondItem="5t0-jN-PQU" secondAttribute="top" constant="100" id="jEj-GP-Dzi"/>
+                            <constraint firstItem="5t0-jN-PQU" firstAttribute="bottom" secondItem="beb-lw-DNF" secondAttribute="bottom" constant="302" id="k48-ut-KDl"/>
+                            <constraint firstItem="beb-lw-DNF" firstAttribute="top" secondItem="xW5-HT-212" secondAttribute="top" id="px9-h3-FK3"/>
+                            <constraint firstItem="beb-lw-DNF" firstAttribute="leading" secondItem="R91-Vt-5wT" secondAttribute="leading" id="zHc-jB-er3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="抢购时钟" image="house.fill" catalog="system" selectedImage="house.fill" id="UrJ-dO-wbv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nOe-OZ-zPM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704.58015267175574" y="-473.23943661971833"/>
+        </scene>
+        <!--主页-->
         <scene sceneID="VKH-XC-2cH">
             <objects>
-                <viewController storyboardIdentifier="抢购时钟" title="抢购时钟" interactionActivityTrackingBaseName="抢购时钟" id="Yg9-b2-r0D" userLabel="Item" customClass="MainActionViewController" customModule="ClockUp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="抢购时钟" title="抢购" interactionActivityTrackingBaseName="抢购时钟" id="Yg9-b2-r0D" userLabel="主页" customClass="MainActionViewController" customModule="ClockUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lUK-f0-EXa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -655,7 +732,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dum-pT-fui" userLabel="Stack View_nextNotification">
-                                <rect key="frame" x="16" y="669" width="360" height="80"/>
+                                <rect key="frame" x="16" y="718" width="360" height="80"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Zw-c1-aD1">
                                         <rect key="frame" x="0.0" y="0.0" width="360" height="80"/>
@@ -754,7 +831,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGf-dw-e5P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="704.58015267175574" y="-360.56338028169017"/>
+            <point key="canvasLocation" x="1494" y="-473"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="jO5-Wh-5nD">
@@ -766,9 +843,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Yg9-b2-r0D" kind="relationship" relationship="viewControllers" id="FzA-vd-bbh"/>
-                        <segue destination="RuV-BZ-RTW" kind="relationship" relationship="viewControllers" id="x8C-1R-la5"/>
-                        <segue destination="z7p-7E-ofS" kind="relationship" relationship="viewControllers" id="uus-mE-0sh"/>
+                        <segue destination="5kz-Ra-PeI" kind="relationship" relationship="viewControllers" id="0zh-wQ-Tc9"/>
+                        <segue destination="RuV-BZ-RTW" kind="relationship" relationship="viewControllers" id="vAO-SR-nSP"/>
+                        <segue destination="z7p-7E-ofS" kind="relationship" relationship="viewControllers" id="Fhk-44-4De"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Tz-AD-Eyb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -806,6 +883,9 @@
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tableBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
