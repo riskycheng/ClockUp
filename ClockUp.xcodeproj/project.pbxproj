@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E8DECC8B983E44079FBDFAA /* Pods_ClockUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB054E4220695B0A0F9AC47E /* Pods_ClockUp.framework */; };
 		CF5A08052C14C036008B9BC2 /* ActionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5A08042C14C036008B9BC2 /* ActionListViewController.swift */; };
 		CFCFBD692C08D7D200FAD315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCFBD682C08D7D200FAD315 /* AppDelegate.swift */; };
 		CFCFBD6B2C08D7D200FAD315 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCFBD6A2C08D7D200FAD315 /* SceneDelegate.swift */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47262D30F04303AC91140799 /* Pods-ClockUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockUp.release.xcconfig"; path = "Target Support Files/Pods-ClockUp/Pods-ClockUp.release.xcconfig"; sourceTree = "<group>"; };
+		9ACE53DBB855F86DAA8777EA /* Pods-ClockUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockUp.debug.xcconfig"; path = "Target Support Files/Pods-ClockUp/Pods-ClockUp.debug.xcconfig"; sourceTree = "<group>"; };
 		CF5A08042C14C036008B9BC2 /* ActionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionListViewController.swift; sourceTree = "<group>"; };
 		CFCFBD652C08D7D200FAD315 /* ClockUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClockUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCFBD682C08D7D200FAD315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		CFCFBD742C08D7D400FAD315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFCFBD762C08D7D400FAD315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFCFBD7F2C0A29E300FAD315 /* MainActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainActionViewController.swift; sourceTree = "<group>"; };
+		DB054E4220695B0A0F9AC47E /* Pods_ClockUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClockUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E8DECC8B983E44079FBDFAA /* Pods_ClockUp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FCB361700CACFCAC33A3B82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB054E4220695B0A0F9AC47E /* Pods_ClockUp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABF830C84EE3028F0FACB4F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9ACE53DBB855F86DAA8777EA /* Pods-ClockUp.debug.xcconfig */,
+				47262D30F04303AC91140799 /* Pods-ClockUp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CFCFBD5C2C08D7D200FAD315 = {
 			isa = PBXGroup;
 			children = (
 				CFCFBD672C08D7D200FAD315 /* ClockUp */,
 				CFCFBD662C08D7D200FAD315 /* Products */,
+				ABF830C84EE3028F0FACB4F2 /* Pods */,
+				5FCB361700CACFCAC33A3B82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFCFBD792C08D7D400FAD315 /* Build configuration list for PBXNativeTarget "ClockUp" */;
 			buildPhases = (
+				AC32CD997EF64E7B6212D7A3 /* [CP] Check Pods Manifest.lock */,
 				CFCFBD612C08D7D200FAD315 /* Sources */,
 				CFCFBD622C08D7D200FAD315 /* Frameworks */,
 				CFCFBD632C08D7D200FAD315 /* Resources */,
+				AD3C46892ACEB663E9708023 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,6 +188,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AC32CD997EF64E7B6212D7A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClockUp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD3C46892ACEB663E9708023 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClockUp/Pods-ClockUp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClockUp/Pods-ClockUp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClockUp/Pods-ClockUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CFCFBD612C08D7D200FAD315 /* Sources */ = {
@@ -319,12 +387,14 @@
 		};
 		CFCFBD7A2C08D7D400FAD315 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ACE53DBB855F86DAA8777EA /* Pods-ClockUp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8883CLR38K;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClockUp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -347,12 +417,14 @@
 		};
 		CFCFBD7B2C08D7D400FAD315 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47262D30F04303AC91140799 /* Pods-ClockUp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8883CLR38K;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClockUp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

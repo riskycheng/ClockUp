@@ -6,36 +6,29 @@
 //
 
 import UIKit
-
+import SwiftyGif
 class ActionListViewController: UIViewController {
 
-    @IBOutlet weak var BtnAllActions: UIButton!
-    var isBtnAllActionsSelected : Bool = false
+    @IBOutlet weak var backgroundView: UIView!
+    @IBOutlet weak var bottomContentView: UIView!
+    @IBOutlet weak var headerImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-
-    @IBAction func BtnAllActionsClicked(_ sender: Any) {
-        if isBtnAllActionsSelected {
-            
-            var config = BtnAllActions.configuration
-            config?.background.backgroundColor = UIColor.gray
-            BtnAllActions.configuration = config
-            
-            
-            isBtnAllActionsSelected = false
-            print("deselect allActions")
-        } else {
-            
-            var config = BtnAllActions.configuration
-            config?.background.backgroundColor = UIColor.systemGreen
-            BtnAllActions.configuration = config
-            
-            isBtnAllActionsSelected = true
-            print("select allActions")
+        
+        // Load the GIF file from assets
+        guard let gifData = NSDataAsset(name: "plants_anim")?.data else {
+            print("GIF file not found in assets")
+            return
+        }
+        do {
+            let gif = try UIImage(gifData: gifData)
+            headerImageView.setGifImage(gif, loopCount: -1)
+            // set it to front
+            headerImageView.bringSubviewToFront(bottomContentView)
+            headerImageView.bringSubviewToFront(backgroundView)
+        } catch {
+            print("Error loading GIF: \(error)")
         }
     }
-
 }
