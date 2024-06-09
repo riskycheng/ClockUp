@@ -10,6 +10,7 @@
 		5E8DECC8B983E44079FBDFAA /* Pods_ClockUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB054E4220695B0A0F9AC47E /* Pods_ClockUp.framework */; };
 		CF5A08052C14C036008B9BC2 /* ActionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5A08042C14C036008B9BC2 /* ActionListViewController.swift */; };
 		CFAD81C22C15F12E00DD7880 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD81C12C15F12E00DD7880 /* SettingsViewController.swift */; };
+		CFAD81C42C15FFAB00DD7880 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD81C32C15FFAB00DD7880 /* HomeViewController.swift */; };
 		CFCFBD692C08D7D200FAD315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCFBD682C08D7D200FAD315 /* AppDelegate.swift */; };
 		CFCFBD6B2C08D7D200FAD315 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCFBD6A2C08D7D200FAD315 /* SceneDelegate.swift */; };
 		CFCFBD6D2C08D7D200FAD315 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCFBD6C2C08D7D200FAD315 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		9ACE53DBB855F86DAA8777EA /* Pods-ClockUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockUp.debug.xcconfig"; path = "Target Support Files/Pods-ClockUp/Pods-ClockUp.debug.xcconfig"; sourceTree = "<group>"; };
 		CF5A08042C14C036008B9BC2 /* ActionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionListViewController.swift; sourceTree = "<group>"; };
 		CFAD81C12C15F12E00DD7880 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CFAD81C32C15FFAB00DD7880 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CFCFBD652C08D7D200FAD315 /* ClockUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClockUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCFBD682C08D7D200FAD315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFCFBD6A2C08D7D200FAD315 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				CFCFBD7F2C0A29E300FAD315 /* MainActionViewController.swift */,
 				CF5A08042C14C036008B9BC2 /* ActionListViewController.swift */,
 				CFAD81C12C15F12E00DD7880 /* SettingsViewController.swift */,
+				CFAD81C32C15FFAB00DD7880 /* HomeViewController.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				CF5A08052C14C036008B9BC2 /* ActionListViewController.swift in Sources */,
 				CFCFBD6B2C08D7D200FAD315 /* SceneDelegate.swift in Sources */,
 				CFCFBD802C0A29E300FAD315 /* MainActionViewController.swift in Sources */,
+				CFAD81C42C15FFAB00DD7880 /* HomeViewController.swift in Sources */,
 				CFAD81C22C15F12E00DD7880 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

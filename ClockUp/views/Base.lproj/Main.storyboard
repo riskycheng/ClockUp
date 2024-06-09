@@ -71,6 +71,7 @@
                             <constraint firstItem="gJt-Gb-7bS" firstAttribute="top" secondItem="kvb-0N-rcU" secondAttribute="top" constant="69" id="SA4-VK-IMq"/>
                             <constraint firstItem="gJt-Gb-7bS" firstAttribute="top" secondItem="eeY-e6-8ib" secondAttribute="top" constant="10" id="Smq-uj-tTk"/>
                             <constraint firstItem="gJt-Gb-7bS" firstAttribute="leading" secondItem="kvb-0N-rcU" secondAttribute="leadingMargin" id="VXA-PH-IFU"/>
+                            <constraint firstItem="gJt-Gb-7bS" firstAttribute="top" secondItem="kvb-0N-rcU" secondAttribute="topMargin" constant="10" id="d5i-gH-xUb"/>
                             <constraint firstItem="ixG-aH-2jq" firstAttribute="bottom" secondItem="eeY-e6-8ib" secondAttribute="bottom" constant="-33" id="dai-Zh-9yI"/>
                             <constraint firstAttribute="trailing" secondItem="sq9-jE-5n7" secondAttribute="trailing" id="gLN-mK-LpD"/>
                             <constraint firstItem="ixG-aH-2jq" firstAttribute="top" secondItem="kvb-0N-rcU" secondAttribute="top" id="h4m-o0-Kih"/>
@@ -208,7 +209,7 @@
         <!--首页-->
         <scene sceneID="Niy-5N-EQc">
             <objects>
-                <viewController title="首页" id="5kz-Ra-PeI" sceneMemberID="viewController">
+                <viewController title="首页" id="5kz-Ra-PeI" customClass="HomeViewController" customModule="ClockUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xW5-HT-212">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -217,35 +218,37 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="467"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抢购时钟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64S-7H-yd6">
-                                        <rect key="frame" x="16" y="69" width="200" height="30"/>
+                                        <rect key="frame" x="16" y="77" width="200" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="98E-06-5xe"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="DQw-sJ-ylm"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="RGN-Ud-jXw"/>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="Sds-Xg-esH"/>
-                                            <constraint firstAttribute="height" constant="30" id="hgT-KB-gpL"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="ids-SF-kPZ"/>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="pbs-3V-6cD"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="headerImageView" translatesAutoresizingMaskIntoConstraints="NO" id="97O-un-mIu">
+                                        <rect key="frame" x="273" y="38" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="1KK-u5-N9A"/>
+                                            <constraint firstAttribute="height" constant="100" id="5Xr-fh-32C"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="IVf-A4-W05"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="ObX-Mg-xHi"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="SYV-pF-VqT"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="lJW-uA-spc"/>
+                                            <constraint firstAttribute="width" constant="100" id="pvs-kW-1zn"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
-                                    <constraint firstItem="64S-7H-yd6" firstAttribute="leading" secondItem="beb-lw-DNF" secondAttribute="leading" constant="16" id="9hP-2l-b9S"/>
-                                    <constraint firstItem="64S-7H-yd6" firstAttribute="top" secondItem="beb-lw-DNF" secondAttribute="top" constant="69" id="CK3-1c-xhr"/>
-                                    <constraint firstItem="64S-7H-yd6" firstAttribute="leading" secondItem="beb-lw-DNF" secondAttribute="leading" constant="16" id="Czr-4M-gbg"/>
-                                    <constraint firstItem="64S-7H-yd6" firstAttribute="leading" secondItem="beb-lw-DNF" secondAttribute="leading" constant="16" id="Ia2-WG-vTL"/>
-                                    <constraint firstItem="64S-7H-yd6" firstAttribute="leading" secondItem="beb-lw-DNF" secondAttribute="leading" constant="16" id="KqS-ZM-1hp"/>
+                                    <constraint firstItem="64S-7H-yd6" firstAttribute="top" secondItem="beb-lw-DNF" secondAttribute="topMargin" constant="10" id="B6n-hb-07V"/>
+                                    <constraint firstItem="97O-un-mIu" firstAttribute="top" secondItem="beb-lw-DNF" secondAttribute="top" constant="38" id="JJk-Bd-qm9"/>
+                                    <constraint firstItem="64S-7H-yd6" firstAttribute="leading" secondItem="beb-lw-DNF" secondAttribute="leading" constant="16" id="Phd-ry-tii"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="64S-7H-yd6" secondAttribute="trailing" constant="20" symbolic="YES" id="X8D-lf-Ho3"/>
                                     <constraint firstItem="64S-7H-yd6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="beb-lw-DNF" secondAttribute="leading" constant="16" id="c2r-le-xmm"/>
-                                    <constraint firstItem="64S-7H-yd6" firstAttribute="top" secondItem="beb-lw-DNF" secondAttribute="top" constant="69" id="dsb-B6-lzf"/>
-                                    <constraint firstItem="64S-7H-yd6" firstAttribute="leading" secondItem="beb-lw-DNF" secondAttribute="leading" constant="16" id="jhg-6g-4xH"/>
-                                    <constraint firstItem="64S-7H-yd6" firstAttribute="leading" secondItem="beb-lw-DNF" secondAttribute="leadingMargin" constant="8" id="kSu-Bf-gyj"/>
-                                    <constraint firstItem="64S-7H-yd6" firstAttribute="top" secondItem="beb-lw-DNF" secondAttribute="top" constant="69" id="rXJ-kw-mLW"/>
-                                    <constraint firstItem="64S-7H-yd6" firstAttribute="leading" secondItem="beb-lw-DNF" secondAttribute="leading" constant="16" id="sMi-sn-rIo"/>
+                                    <constraint firstAttribute="trailing" secondItem="97O-un-mIu" secondAttribute="trailing" constant="20" id="lrp-n9-vNw"/>
+                                    <constraint firstItem="97O-un-mIu" firstAttribute="top" secondItem="beb-lw-DNF" secondAttribute="top" constant="38" id="wlp-MF-wY9"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R91-Vt-5wT">
@@ -273,6 +276,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="抢购时钟" image="house.fill" catalog="system" selectedImage="house.fill" id="UrJ-dO-wbv"/>
+                    <connections>
+                        <outlet property="headerHomeImageView" destination="97O-un-mIu" id="rh8-aX-j9T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nOe-OZ-zPM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
