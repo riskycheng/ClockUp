@@ -37,7 +37,6 @@
                                 <rect key="frame" x="0.0" y="159" width="393" height="610"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="610" id="RKp-3t-vPe"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="390" id="bCP-gp-zKi"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="610" id="ggI-RO-dkk"/>
                                 </constraints>
@@ -62,23 +61,18 @@
                         <color key="backgroundColor" red="0.92502170800000005" green="0.92502170800000005" blue="0.92502170800000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Yn1-ZP-OV7" firstAttribute="top" secondItem="eeY-e6-8ib" secondAttribute="top" constant="-20" id="0vG-kL-jzL"/>
-                            <constraint firstItem="gJt-Gb-7bS" firstAttribute="top" secondItem="eeY-e6-8ib" secondAttribute="top" constant="10" id="2yV-e6-Eml"/>
                             <constraint firstItem="sq9-jE-5n7" firstAttribute="leading" secondItem="eeY-e6-8ib" secondAttribute="leading" id="6uu-tY-cVM"/>
                             <constraint firstItem="eeY-e6-8ib" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gJt-Gb-7bS" secondAttribute="trailing" symbolic="YES" id="9hh-HH-kEH"/>
                             <constraint firstItem="sq9-jE-5n7" firstAttribute="top" secondItem="eeY-e6-8ib" secondAttribute="top" constant="100" id="Azs-8F-16K"/>
-                            <constraint firstItem="gJt-Gb-7bS" firstAttribute="leading" secondItem="eeY-e6-8ib" secondAttribute="leading" constant="16" id="D4l-SO-oI5"/>
                             <constraint firstItem="eeY-e6-8ib" firstAttribute="trailing" secondItem="Yn1-ZP-OV7" secondAttribute="trailing" constant="-20" id="HhE-W7-dCG"/>
                             <constraint firstItem="gJt-Gb-7bS" firstAttribute="top" secondItem="kvb-0N-rcU" secondAttribute="top" constant="69" id="SA4-VK-IMq"/>
-                            <constraint firstItem="gJt-Gb-7bS" firstAttribute="top" secondItem="eeY-e6-8ib" secondAttribute="top" constant="10" id="Smq-uj-tTk"/>
                             <constraint firstItem="gJt-Gb-7bS" firstAttribute="leading" secondItem="kvb-0N-rcU" secondAttribute="leadingMargin" id="VXA-PH-IFU"/>
-                            <constraint firstItem="gJt-Gb-7bS" firstAttribute="top" secondItem="kvb-0N-rcU" secondAttribute="topMargin" constant="10" id="d5i-gH-xUb"/>
                             <constraint firstItem="ixG-aH-2jq" firstAttribute="bottom" secondItem="eeY-e6-8ib" secondAttribute="bottom" constant="-33" id="dai-Zh-9yI"/>
                             <constraint firstAttribute="trailing" secondItem="sq9-jE-5n7" secondAttribute="trailing" id="gLN-mK-LpD"/>
                             <constraint firstItem="ixG-aH-2jq" firstAttribute="top" secondItem="kvb-0N-rcU" secondAttribute="top" id="h4m-o0-Kih"/>
                             <constraint firstItem="ixG-aH-2jq" firstAttribute="trailing" secondItem="sq9-jE-5n7" secondAttribute="trailing" constant="153" id="ocO-Hf-r0B"/>
                             <constraint firstItem="sq9-jE-5n7" firstAttribute="bottom" secondItem="eeY-e6-8ib" secondAttribute="bottom" id="ofT-VZ-foj"/>
                             <constraint firstItem="ixG-aH-2jq" firstAttribute="leading" secondItem="sq9-jE-5n7" secondAttribute="leading" id="p2T-5D-88G"/>
-                            <constraint firstItem="gJt-Gb-7bS" firstAttribute="top" secondItem="eeY-e6-8ib" secondAttribute="top" constant="10" id="pCs-AX-pYO"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="代办事件" image="alarm.fill" catalog="system" id="vRv-xR-Ff3"/>
@@ -100,7 +94,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jd-gI-W8k">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="设置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jd-gI-W8k">
                                 <rect key="frame" x="16" y="69" width="81.666666666666671" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="20" id="3w9-TD-a1P"/>
@@ -162,10 +156,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="610" id="7Th-Nx-xXS"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="390" id="DmV-tw-1NZ"/>
                                     <constraint firstAttribute="width" constant="393" id="IAO-le-eXO"/>
-                                    <constraint firstAttribute="height" constant="610" id="RIu-aK-t89"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="610" id="iZo-uZ-BYR"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -179,8 +170,7 @@
                         <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fea-5T-hvY" firstAttribute="top" secondItem="bE3-P5-Ujh" secondAttribute="top" constant="100" id="75L-uc-kMB"/>
-                            <constraint firstItem="bE3-P5-Ujh" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WvG-kV-EkP" secondAttribute="trailing" symbolic="YES" id="8e4-Kl-hd9"/>
-                            <constraint firstItem="WvG-kV-EkP" firstAttribute="top" secondItem="bE3-P5-Ujh" secondAttribute="top" constant="10" id="JkV-zv-H42"/>
+                            <constraint firstItem="bE3-P5-Ujh" firstAttribute="trailing" secondItem="WvG-kV-EkP" secondAttribute="trailing" constant="177" id="9S1-Ks-Uyd"/>
                             <constraint firstItem="bE3-P5-Ujh" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2jd-gI-W8k" secondAttribute="trailing" symbolic="YES" id="KgM-Jk-dHE"/>
                             <constraint firstItem="fea-5T-hvY" firstAttribute="leading" secondItem="7BH-T3-Scx" secondAttribute="leading" id="YwZ-8E-gJ6"/>
                             <constraint firstItem="WvG-kV-EkP" firstAttribute="top" secondItem="7BH-T3-Scx" secondAttribute="top" constant="69" id="Z9S-SB-zwV"/>
@@ -189,12 +179,10 @@
                             <constraint firstItem="bE3-P5-Ujh" firstAttribute="bottom" secondItem="8L9-Ko-UPl" secondAttribute="bottom" constant="36" id="aQn-z9-tnI"/>
                             <constraint firstItem="8L9-Ko-UPl" firstAttribute="trailing" secondItem="fea-5T-hvY" secondAttribute="trailing" id="bmP-Gt-CNl"/>
                             <constraint firstItem="2jd-gI-W8k" firstAttribute="leading" secondItem="bE3-P5-Ujh" secondAttribute="leading" constant="16" id="izr-Ax-RSR"/>
-                            <constraint firstItem="2jd-gI-W8k" firstAttribute="top" secondItem="bE3-P5-Ujh" secondAttribute="top" constant="10" id="oAq-uo-0IW"/>
                             <constraint firstItem="8L9-Ko-UPl" firstAttribute="leading" secondItem="fea-5T-hvY" secondAttribute="leading" id="pdR-hQ-C1b"/>
                             <constraint firstAttribute="trailing" secondItem="fea-5T-hvY" secondAttribute="trailing" id="sEc-Cd-TW7"/>
-                            <constraint firstItem="fea-5T-hvY" firstAttribute="top" secondItem="bE3-P5-Ujh" secondAttribute="top" constant="100" id="wQf-px-eMb"/>
                             <constraint firstItem="8L9-Ko-UPl" firstAttribute="top" secondItem="7BH-T3-Scx" secondAttribute="top" id="yNF-MU-sTu"/>
-                            <constraint firstItem="WvG-kV-EkP" firstAttribute="leading" secondItem="bE3-P5-Ujh" secondAttribute="leading" constant="16" id="zxb-Zb-uIm"/>
+                            <constraint firstItem="WvG-kV-EkP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bE3-P5-Ujh" secondAttribute="leading" id="zxb-Zb-uIm"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="设置" image="gearshape.fill" catalog="system" id="bKz-ok-FW1"/>
