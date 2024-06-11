@@ -14,6 +14,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var displayModeBtn: UIButton!
     @IBOutlet weak var timeFormatBtn: UIButton!
     
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var gradientView: UIView!
+    @IBOutlet weak var timeLabel: UILabel!
+
     var timer: Timer?
     
     override func viewDidLoad() {
@@ -30,7 +34,27 @@ class HomeViewController: UIViewController {
         } catch {
             print("Error loading GIF: \(error)")
         }
+        
+        startTimer()
+        
+        setupDisplayMode()
+        
+        setupTimeFormatMode()
+        
+        setupContainerView()
+        
+        setupGradientBackground()
+        
+        setupViewAppearance()
     }
+    
+    override func viewDidLayoutSubviews() {
+            super.viewDidLayoutSubviews()
+            // Update the gradient layer's frame to match the view's bounds
+            if let gradientLayer = gradientView.layer.sublayers?.first as? CAGradientLayer {
+                gradientLayer.frame = gradientView.bounds
+            }
+        }
     
     
     func setupDisplayMode() {
@@ -66,6 +90,43 @@ class HomeViewController: UIViewController {
                 print("selected 毫秒")
             })
         ])
+    }
+    
+    
+    func startTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateTimeLabel), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateTimeLabel() {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "HH:mm:ss.S"
+            timeLabel.text = formatter.string(from: Date())
+    }
+    
+    func setupContainerView() {
+           // Shadow setup on the container view
+           containerView.layer.shadowColor = UIColor.black.cgColor
+           containerView.layer.shadowOpacity = 0.6
+           containerView.layer.shadowOffset = CGSize(width: 0, height: 4)
+           containerView.layer.shadowRadius = 10
+       }
+
+    
+    func setupGradientBackground() {
+           let gradientLayer = CAGradientLayer()
+           gradientLayer.colors = [
+               UIColor(red: 230/255, green: 230/255, blue: 250/255, alpha: 1).cgColor, // Lavender
+               UIColor(red: 123/255, green: 104/255, blue: 238/255, alpha: 1).cgColor  // MediumSlateBlue
+           ]
+           gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+           gradientLayer.endPoint = CGPoint(x: 1, y: 1)
+           gradientLayer.frame = gradientView.bounds
+           gradientView.layer.insertSublayer(gradientLayer, at: 0)
+       }
+    
+    func setupViewAppearance() {
+        gradientView.layer.cornerRadius = 15
+        gradientView.layer.masksToBounds = true // This ensures the gradient view clips its content to its rounded corners
     }
     
     
