@@ -223,7 +223,7 @@
                                 <rect key="frame" x="0.0" y="159" width="393" height="610"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="3Dd-bC-5rt" userLabel="Stack View_ROW1">
-                                        <rect key="frame" x="17" y="245" width="359" height="120"/>
+                                        <rect key="frame" x="17" y="285" width="359" height="120"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="g4R-Tz-iUw" userLabel="Stack View_时钟格式">
                                                 <rect key="frame" x="0.0" y="0.0" width="160" height="120"/>
@@ -399,7 +399,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="eAF-qL-Wao" userLabel="Stack View_ROW2">
-                                        <rect key="frame" x="16" y="387" width="360" height="120"/>
+                                        <rect key="frame" x="16" y="427" width="360" height="120"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qlX-BD-aUr" userLabel="Stack View_倒计时">
                                                 <rect key="frame" x="0.0" y="0.0" width="160" height="120"/>
@@ -546,9 +546,8 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFQ-J3-JX7">
-                                        <rect key="frame" x="117.66666666666669" y="160" width="158" height="60"/>
+                                        <rect key="frame" x="117.66666666666669" y="200" width="158" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="DXb-Yc-zNP"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Fc5-Nq-SSu"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
@@ -568,10 +567,10 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="vFQ-J3-JX7" firstAttribute="centerX" secondItem="3Dd-bC-5rt" secondAttribute="centerX" id="9WV-Yt-2Zb"/>
+                                    <constraint firstItem="vFQ-J3-JX7" firstAttribute="top" secondItem="R91-Vt-5wT" secondAttribute="top" constant="200" id="DxS-vj-q7L"/>
                                     <constraint firstItem="eAF-qL-Wao" firstAttribute="top" secondItem="3Dd-bC-5rt" secondAttribute="bottom" constant="22" id="HfQ-ad-8af"/>
                                     <constraint firstItem="eAF-qL-Wao" firstAttribute="trailing" secondItem="3Dd-bC-5rt" secondAttribute="trailing" id="NM1-GT-43B"/>
                                     <constraint firstItem="3Dd-bC-5rt" firstAttribute="top" secondItem="vFQ-J3-JX7" secondAttribute="bottom" constant="25" id="NQ1-GH-SYM"/>
-                                    <constraint firstItem="eAF-qL-Wao" firstAttribute="top" secondItem="R91-Vt-5wT" secondAttribute="top" constant="387" id="RrY-dh-Vg7"/>
                                     <constraint firstItem="vFQ-J3-JX7" firstAttribute="centerX" secondItem="R91-Vt-5wT" secondAttribute="centerX" id="pOL-Dl-Hbp"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -582,7 +581,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gmQ-Nl-nzZ" userLabel="Stack View_ClockFace">
-                                <rect key="frame" x="10" y="169" width="373" height="120"/>
+                                <rect key="frame" x="10" y="199" width="373" height="120"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IfI-vo-gUi">
                                         <rect key="frame" x="0.0" y="0.0" width="373" height="120"/>
@@ -680,11 +679,11 @@
                         <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gmQ-Nl-nzZ" firstAttribute="centerX" secondItem="xW5-HT-212" secondAttribute="centerX" id="5Fl-Ur-lLD"/>
-                            <constraint firstItem="gmQ-Nl-nzZ" firstAttribute="top" secondItem="5t0-jN-PQU" secondAttribute="top" constant="110" id="B3j-RA-erM"/>
                             <constraint firstItem="R91-Vt-5wT" firstAttribute="bottom" secondItem="5t0-jN-PQU" secondAttribute="bottom" id="IL4-vR-c8k"/>
                             <constraint firstAttribute="trailing" secondItem="beb-lw-DNF" secondAttribute="trailing" id="NXW-6G-sXl"/>
                             <constraint firstItem="beb-lw-DNF" firstAttribute="trailing" secondItem="R91-Vt-5wT" secondAttribute="trailing" id="Pdg-3h-QUH"/>
                             <constraint firstItem="beb-lw-DNF" firstAttribute="leading" secondItem="xW5-HT-212" secondAttribute="leading" id="TGi-dF-qaZ"/>
+                            <constraint firstItem="gmQ-Nl-nzZ" firstAttribute="top" secondItem="5t0-jN-PQU" secondAttribute="top" constant="140" id="cxi-xK-sHH"/>
                             <constraint firstItem="gmQ-Nl-nzZ" firstAttribute="leading" secondItem="5t0-jN-PQU" secondAttribute="leading" constant="10" id="hm1-Nf-W1P"/>
                             <constraint firstItem="R91-Vt-5wT" firstAttribute="top" secondItem="5t0-jN-PQU" secondAttribute="top" constant="100" id="jEj-GP-Dzi"/>
                             <constraint firstItem="5t0-jN-PQU" firstAttribute="bottom" secondItem="beb-lw-DNF" secondAttribute="bottom" constant="302" id="k48-ut-KDl"/>
@@ -1259,7 +1258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGf-dw-e5P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1494" y="-473"/>
+            <point key="canvasLocation" x="169" y="-2280"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="jO5-Wh-5nD">
