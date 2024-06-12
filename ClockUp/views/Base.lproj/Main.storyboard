@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixG-aH-2jq">
-                                <rect key="frame" x="0.0" y="0.0" width="546" height="736"/>
+                                <rect key="frame" x="3" y="0.0" width="543" height="736"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="代办事件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJt-Gb-7bS">
@@ -34,11 +34,28 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sq9-jE-5n7">
-                                <rect key="frame" x="0.0" y="159" width="393" height="610"/>
+                                <rect key="frame" x="3" y="159" width="390" height="610"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="104-iN-Bsu">
+                                        <rect key="frame" x="40" y="10" width="310" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="hmT-Sp-TPT"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="全部"/>
+                                            <segment title="待进行"/>
+                                            <segment title="已完成"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="104-iN-Bsu" firstAttribute="top" secondItem="sq9-jE-5n7" secondAttribute="top" constant="10" id="E0E-No-hLB"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="390" id="bCP-gp-zKi"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="610" id="ggI-RO-dkk"/>
+                                    <constraint firstAttribute="trailing" secondItem="104-iN-Bsu" secondAttribute="trailing" constant="40" id="iKM-0O-WGv"/>
+                                    <constraint firstItem="104-iN-Bsu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sq9-jE-5n7" secondAttribute="leading" constant="20" symbolic="YES" id="ls3-3P-mdI"/>
+                                    <constraint firstItem="104-iN-Bsu" firstAttribute="centerX" secondItem="sq9-jE-5n7" secondAttribute="centerX" id="nFE-9R-E8l"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -61,7 +78,6 @@
                         <color key="backgroundColor" red="0.92502170800000005" green="0.92502170800000005" blue="0.92502170800000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Yn1-ZP-OV7" firstAttribute="top" secondItem="eeY-e6-8ib" secondAttribute="top" constant="-20" id="0vG-kL-jzL"/>
-                            <constraint firstItem="sq9-jE-5n7" firstAttribute="leading" secondItem="eeY-e6-8ib" secondAttribute="leading" id="6uu-tY-cVM"/>
                             <constraint firstItem="eeY-e6-8ib" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gJt-Gb-7bS" secondAttribute="trailing" symbolic="YES" id="9hh-HH-kEH"/>
                             <constraint firstItem="sq9-jE-5n7" firstAttribute="top" secondItem="eeY-e6-8ib" secondAttribute="top" constant="100" id="Azs-8F-16K"/>
                             <constraint firstItem="eeY-e6-8ib" firstAttribute="trailing" secondItem="Yn1-ZP-OV7" secondAttribute="trailing" constant="-20" id="HhE-W7-dCG"/>
