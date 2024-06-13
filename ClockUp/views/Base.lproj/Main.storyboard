@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixG-aH-2jq">
-                                <rect key="frame" x="3" y="0.0" width="543" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="546" height="736"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="代办事件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJt-Gb-7bS">
@@ -34,10 +34,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sq9-jE-5n7">
-                                <rect key="frame" x="3" y="159" width="390" height="610"/>
+                                <rect key="frame" x="0.0" y="159" width="393" height="610"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="104-iN-Bsu">
-                                        <rect key="frame" x="40" y="10" width="310" height="41"/>
+                                        <rect key="frame" x="40" y="10" width="313" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="hmT-Sp-TPT"/>
                                         </constraints>
@@ -86,6 +86,7 @@
                             <constraint firstItem="ixG-aH-2jq" firstAttribute="bottom" secondItem="eeY-e6-8ib" secondAttribute="bottom" constant="-33" id="dai-Zh-9yI"/>
                             <constraint firstAttribute="trailing" secondItem="sq9-jE-5n7" secondAttribute="trailing" id="gLN-mK-LpD"/>
                             <constraint firstItem="ixG-aH-2jq" firstAttribute="top" secondItem="kvb-0N-rcU" secondAttribute="top" id="h4m-o0-Kih"/>
+                            <constraint firstItem="ixG-aH-2jq" firstAttribute="leading" secondItem="eeY-e6-8ib" secondAttribute="leading" id="m0e-ra-BLz"/>
                             <constraint firstItem="ixG-aH-2jq" firstAttribute="trailing" secondItem="sq9-jE-5n7" secondAttribute="trailing" constant="153" id="ocO-Hf-r0B"/>
                             <constraint firstItem="sq9-jE-5n7" firstAttribute="bottom" secondItem="eeY-e6-8ib" secondAttribute="bottom" id="ofT-VZ-foj"/>
                             <constraint firstItem="ixG-aH-2jq" firstAttribute="leading" secondItem="sq9-jE-5n7" secondAttribute="leading" id="p2T-5D-88G"/>
