@@ -47,6 +47,21 @@
                                             <segment title="已完成"/>
                                         </segments>
                                     </segmentedControl>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="BKK-7H-uoy">
+                                        <rect key="frame" x="8" y="64" width="377" height="538"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reusable_tableCellIdentifier" rowHeight="200" id="ST9-W9-EGJ" customClass="ActionListTableViewCell" customModule="ClockUp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="50" width="377" height="200"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ST9-W9-EGJ" id="o17-k7-QCc" customClass="ActionListTableViewCell" customModule="ClockUp" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="377" height="200"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -94,6 +109,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="代办事件" image="alarm.fill" catalog="system" id="vRv-xR-Ff3"/>
                     <connections>
+                        <outlet property="actionListTableView" destination="BKK-7H-uoy" id="MnF-bh-3af"/>
                         <outlet property="backgroundView" destination="ixG-aH-2jq" id="72c-a9-cFt"/>
                         <outlet property="bottomContentView" destination="sq9-jE-5n7" id="PMh-Ay-pYW"/>
                         <outlet property="headerImageView" destination="Yn1-ZP-OV7" id="Jxf-bs-qEi"/>

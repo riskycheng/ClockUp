@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5E8DECC8B983E44079FBDFAA /* Pods_ClockUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB054E4220695B0A0F9AC47E /* Pods_ClockUp.framework */; };
 		CF5A08052C14C036008B9BC2 /* ActionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5A08042C14C036008B9BC2 /* ActionListViewController.swift */; };
+		CF812D852C1BBE0A003861E7 /* ActionListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF812D832C1BBE0A003861E7 /* ActionListTableViewCell.swift */; };
+		CF812D862C1BBE0A003861E7 /* ActionListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF812D842C1BBE0A003861E7 /* ActionListTableViewCell.xib */; };
+		CF812D892C1BBF0A003861E7 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF812D882C1BBF0A003861E7 /* K.swift */; };
 		CFAD81C22C15F12E00DD7880 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD81C12C15F12E00DD7880 /* SettingsViewController.swift */; };
 		CFAD81C42C15FFAB00DD7880 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD81C32C15FFAB00DD7880 /* HomeViewController.swift */; };
 		CFCFBD692C08D7D200FAD315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCFBD682C08D7D200FAD315 /* AppDelegate.swift */; };
@@ -24,6 +27,9 @@
 		47262D30F04303AC91140799 /* Pods-ClockUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockUp.release.xcconfig"; path = "Target Support Files/Pods-ClockUp/Pods-ClockUp.release.xcconfig"; sourceTree = "<group>"; };
 		9ACE53DBB855F86DAA8777EA /* Pods-ClockUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockUp.debug.xcconfig"; path = "Target Support Files/Pods-ClockUp/Pods-ClockUp.debug.xcconfig"; sourceTree = "<group>"; };
 		CF5A08042C14C036008B9BC2 /* ActionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionListViewController.swift; sourceTree = "<group>"; };
+		CF812D832C1BBE0A003861E7 /* ActionListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionListTableViewCell.swift; sourceTree = "<group>"; };
+		CF812D842C1BBE0A003861E7 /* ActionListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionListTableViewCell.xib; sourceTree = "<group>"; };
+		CF812D882C1BBF0A003861E7 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		CFAD81C12C15F12E00DD7880 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CFAD81C32C15FFAB00DD7880 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CFCFBD652C08D7D200FAD315 /* ClockUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClockUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +73,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CF812D872C1BBEF8003861E7 /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				CF812D882C1BBF0A003861E7 /* K.swift */,
+			);
+			name = constants;
+			sourceTree = "<group>";
+		};
 		CFCFBD5C2C08D7D200FAD315 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +102,7 @@
 		CFCFBD672C08D7D200FAD315 /* ClockUp */ = {
 			isa = PBXGroup;
 			children = (
+				CF812D872C1BBEF8003861E7 /* constants */,
 				CFCFBD7E2C08D88D00FAD315 /* controller */,
 				CFCFBD7D2C08D88800FAD315 /* views */,
 				CFCFBD7C2C08D88100FAD315 /* models */,
@@ -104,6 +119,8 @@
 		CFCFBD7C2C08D88100FAD315 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				CF812D832C1BBE0A003861E7 /* ActionListTableViewCell.swift */,
+				CF812D842C1BBE0A003861E7 /* ActionListTableViewCell.xib */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -188,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFCFBD722C08D7D400FAD315 /* Assets.xcassets in Resources */,
+				CF812D862C1BBE0A003861E7 /* ActionListTableViewCell.xib in Resources */,
 				CFCFBD752C08D7D400FAD315 /* Base in Resources */,
 				CFCFBD702C08D7D200FAD315 /* Base in Resources */,
 			);
@@ -242,11 +260,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF812D892C1BBF0A003861E7 /* K.swift in Sources */,
 				CFCFBD6D2C08D7D200FAD315 /* ViewController.swift in Sources */,
 				CFCFBD692C08D7D200FAD315 /* AppDelegate.swift in Sources */,
 				CF5A08052C14C036008B9BC2 /* ActionListViewController.swift in Sources */,
 				CFCFBD6B2C08D7D200FAD315 /* SceneDelegate.swift in Sources */,
 				CFCFBD802C0A29E300FAD315 /* MainActionViewController.swift in Sources */,
+				CF812D852C1BBE0A003861E7 /* ActionListTableViewCell.swift in Sources */,
 				CFAD81C42C15FFAB00DD7880 /* HomeViewController.swift in Sources */,
 				CFAD81C22C15F12E00DD7880 /* SettingsViewController.swift in Sources */,
 			);

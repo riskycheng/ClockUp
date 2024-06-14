@@ -13,6 +13,8 @@ class ActionListViewController: UIViewController {
     @IBOutlet weak var bottomContentView: UIView!
     @IBOutlet weak var headerImageView: UIImageView!
     
+    @IBOutlet weak var actionListTableView: UITableView!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,5 +32,32 @@ class ActionListViewController: UIViewController {
         } catch {
             print("Error loading GIF: \(error)")
         }
+        
+        // set the tableView related
+        actionListTableView.dataSource = self
+        actionListTableView.delegate = self
+        
+        // register the tableViewCell into this tableView
+        actionListTableView.register(ActionListTableViewCell.getNib(), forCellReuseIdentifier: K.ACTION_LIST_REUSE_CELL_IDENTIFIER)
     }
+}
+
+
+extension ActionListViewController : UITableViewDelegate {
+    
+}
+
+extension ActionListViewController : UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let reuseCell = tableView.dequeueReusableCell(withIdentifier: K.ACTION_LIST_REUSE_CELL_IDENTIFIER, for: indexPath) as! ActionListTableViewCell
+        reuseCell.label_title?.text = "title \(indexPath.row)"
+        reuseCell.label_time?.text = "2024-06-\(indexPath.row)"
+        return reuseCell
+    }
+    
+    
 }
