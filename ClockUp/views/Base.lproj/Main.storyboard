@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixG-aH-2jq">
-                                <rect key="frame" x="0.0" y="0.0" width="546" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="559" height="736"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="代办事件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJt-Gb-7bS">
@@ -34,10 +34,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sq9-jE-5n7">
-                                <rect key="frame" x="0.0" y="159" width="393" height="610"/>
+                                <rect key="frame" x="0.0" y="159" width="406" height="610"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="104-iN-Bsu">
-                                        <rect key="frame" x="40" y="10" width="313" height="41"/>
+                                        <rect key="frame" x="40" y="10" width="326" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="hmT-Sp-TPT"/>
                                         </constraints>
@@ -47,16 +47,18 @@
                                             <segment title="已完成"/>
                                         </segments>
                                     </segmentedControl>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="BKK-7H-uoy">
-                                        <rect key="frame" x="8" y="64" width="377" height="538"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="BKK-7H-uoy">
+                                        <rect key="frame" x="4" y="60" width="390" height="550"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="390" id="Atw-um-cah"/>
+                                        </constraints>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reusable_tableCellIdentifier" rowHeight="200" id="ST9-W9-EGJ" customClass="ActionListTableViewCell" customModule="ClockUp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="50" width="377" height="200"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reusable_tableCellIdentifier" rowHeight="120" id="ST9-W9-EGJ" customClass="ActionListTableViewCell" customModule="ClockUp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="50" width="390" height="120"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ST9-W9-EGJ" id="o17-k7-QCc" customClass="ActionListTableViewCell" customModule="ClockUp" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="377" height="200"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="390" height="120"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
@@ -66,11 +68,15 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="104-iN-Bsu" firstAttribute="top" secondItem="sq9-jE-5n7" secondAttribute="top" constant="10" id="E0E-No-hLB"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="BKK-7H-uoy" secondAttribute="trailing" constant="4" id="Qqh-Ts-vx2"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="390" id="bCP-gp-zKi"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="610" id="ggI-RO-dkk"/>
                                     <constraint firstAttribute="trailing" secondItem="104-iN-Bsu" secondAttribute="trailing" constant="40" id="iKM-0O-WGv"/>
+                                    <constraint firstAttribute="bottom" secondItem="BKK-7H-uoy" secondAttribute="bottom" id="inX-Bz-UJc"/>
                                     <constraint firstItem="104-iN-Bsu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sq9-jE-5n7" secondAttribute="leading" constant="20" symbolic="YES" id="ls3-3P-mdI"/>
+                                    <constraint firstItem="BKK-7H-uoy" firstAttribute="top" secondItem="104-iN-Bsu" secondAttribute="bottom" constant="10" id="n3n-Eq-Ald"/>
                                     <constraint firstItem="104-iN-Bsu" firstAttribute="centerX" secondItem="sq9-jE-5n7" secondAttribute="centerX" id="nFE-9R-E8l"/>
+                                    <constraint firstItem="BKK-7H-uoy" firstAttribute="leading" secondItem="sq9-jE-5n7" secondAttribute="leading" constant="4" id="uBB-XL-52c"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -99,7 +105,6 @@
                             <constraint firstItem="gJt-Gb-7bS" firstAttribute="top" secondItem="kvb-0N-rcU" secondAttribute="top" constant="69" id="SA4-VK-IMq"/>
                             <constraint firstItem="gJt-Gb-7bS" firstAttribute="leading" secondItem="kvb-0N-rcU" secondAttribute="leadingMargin" id="VXA-PH-IFU"/>
                             <constraint firstItem="ixG-aH-2jq" firstAttribute="bottom" secondItem="eeY-e6-8ib" secondAttribute="bottom" constant="-33" id="dai-Zh-9yI"/>
-                            <constraint firstAttribute="trailing" secondItem="sq9-jE-5n7" secondAttribute="trailing" id="gLN-mK-LpD"/>
                             <constraint firstItem="ixG-aH-2jq" firstAttribute="top" secondItem="kvb-0N-rcU" secondAttribute="top" id="h4m-o0-Kih"/>
                             <constraint firstItem="ixG-aH-2jq" firstAttribute="leading" secondItem="eeY-e6-8ib" secondAttribute="leading" id="m0e-ra-BLz"/>
                             <constraint firstItem="ixG-aH-2jq" firstAttribute="trailing" secondItem="sq9-jE-5n7" secondAttribute="trailing" constant="153" id="ocO-Hf-r0B"/>
