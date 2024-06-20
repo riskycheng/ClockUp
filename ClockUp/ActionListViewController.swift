@@ -14,6 +14,8 @@ class ActionListViewController: UIViewController {
     @IBOutlet weak var headerImageView: UIImageView!
     
     @IBOutlet weak var actionListTableView: UITableView!
+    
+    var simulatedDataActions : [ActionItem] = K.simulateData(number: 10)
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,15 +51,22 @@ extension ActionListViewController : UITableViewDelegate {
 
 extension ActionListViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return simulatedDataActions.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let reuseCell = tableView.dequeueReusableCell(withIdentifier: K.ACTION_LIST_REUSE_CELL_IDENTIFIER, for: indexPath) as! ActionListTableViewCell
-        reuseCell.label_title?.text = "title \(indexPath.row)"
-        reuseCell.label_time?.text = "2024-06-\(indexPath.row)"
+        
+        let actionItem = simulatedDataActions[indexPath.row]
+        reuseCell.label_title?.text = actionItem.mainTitle
+        
+        // format the date string
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd HH:mm"
+        reuseCell.label_time?.text = formatter.string(from: actionItem.dueDate)
+        
+        reuseCell.label_link?.text = actionItem.link
+        
         return reuseCell
     }
-    
-    
 }

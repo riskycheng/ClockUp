@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E8DECC8B983E44079FBDFAA /* Pods_ClockUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB054E4220695B0A0F9AC47E /* Pods_ClockUp.framework */; };
+		CF4A36472C244BA200577863 /* ActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A36462C244BA200577863 /* ActionItem.swift */; };
 		CF5A08052C14C036008B9BC2 /* ActionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5A08042C14C036008B9BC2 /* ActionListViewController.swift */; };
 		CF812D852C1BBE0A003861E7 /* ActionListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF812D832C1BBE0A003861E7 /* ActionListTableViewCell.swift */; };
 		CF812D862C1BBE0A003861E7 /* ActionListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF812D842C1BBE0A003861E7 /* ActionListTableViewCell.xib */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		47262D30F04303AC91140799 /* Pods-ClockUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockUp.release.xcconfig"; path = "Target Support Files/Pods-ClockUp/Pods-ClockUp.release.xcconfig"; sourceTree = "<group>"; };
 		9ACE53DBB855F86DAA8777EA /* Pods-ClockUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockUp.debug.xcconfig"; path = "Target Support Files/Pods-ClockUp/Pods-ClockUp.debug.xcconfig"; sourceTree = "<group>"; };
+		CF4A36462C244BA200577863 /* ActionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionItem.swift; sourceTree = "<group>"; };
 		CF5A08042C14C036008B9BC2 /* ActionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionListViewController.swift; sourceTree = "<group>"; };
 		CF812D832C1BBE0A003861E7 /* ActionListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionListTableViewCell.swift; sourceTree = "<group>"; };
 		CF812D842C1BBE0A003861E7 /* ActionListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionListTableViewCell.xib; sourceTree = "<group>"; };
@@ -121,8 +123,7 @@
 		CFCFBD7C2C08D88100FAD315 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				CF812D832C1BBE0A003861E7 /* ActionListTableViewCell.swift */,
-				CF812D842C1BBE0A003861E7 /* ActionListTableViewCell.xib */,
+				CF4A36462C244BA200577863 /* ActionItem.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -130,6 +131,8 @@
 		CFCFBD7D2C08D88800FAD315 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				CF812D832C1BBE0A003861E7 /* ActionListTableViewCell.swift */,
+				CF812D842C1BBE0A003861E7 /* ActionListTableViewCell.xib */,
 				CFCFBD6E2C08D7D200FAD315 /* Main.storyboard */,
 				CF812D8A2C1DEB10003861E7 /* UnevenRoundedRectangle.swift */,
 			);
@@ -269,6 +272,7 @@
 				CFCFBD692C08D7D200FAD315 /* AppDelegate.swift in Sources */,
 				CF5A08052C14C036008B9BC2 /* ActionListViewController.swift in Sources */,
 				CFCFBD6B2C08D7D200FAD315 /* SceneDelegate.swift in Sources */,
+				CF4A36472C244BA200577863 /* ActionItem.swift in Sources */,
 				CFCFBD802C0A29E300FAD315 /* MainActionViewController.swift in Sources */,
 				CF812D852C1BBE0A003861E7 /* ActionListTableViewCell.swift in Sources */,
 				CFAD81C42C15FFAB00DD7880 /* HomeViewController.swift in Sources */,
