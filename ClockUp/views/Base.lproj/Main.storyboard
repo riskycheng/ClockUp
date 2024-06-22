@@ -61,20 +61,38 @@
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="xtx-m2-qNA">
+                                        <rect key="frame" x="320" y="550" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" imagePadding="30">
+                                            <imageReference key="image" image="addCustomized" symbolScale="large"/>
+                                            <backgroundConfiguration key="background"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
+                                            <directionalEdgeInsets key="contentInsets" top="20" leading="20" bottom="20" trailing="20"/>
+                                            <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="104-iN-Bsu" firstAttribute="top" secondItem="sq9-jE-5n7" secondAttribute="top" constant="10" id="E0E-No-hLB"/>
-                                    <constraint firstAttribute="trailing" secondItem="BKK-7H-uoy" secondAttribute="trailing" constant="10" id="NoE-dv-gW8"/>
+                                    <constraint firstItem="BKK-7H-uoy" firstAttribute="centerX" secondItem="104-iN-Bsu" secondAttribute="centerX" id="Har-Z0-xhq"/>
+                                    <constraint firstItem="BKK-7H-uoy" firstAttribute="trailing" secondItem="xtx-m2-qNA" secondAttribute="trailing" id="PcJ-VW-NrM"/>
+                                    <constraint firstItem="BKK-7H-uoy" firstAttribute="top" secondItem="104-iN-Bsu" secondAttribute="bottom" id="a2c-bU-BTW"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="390" id="bCP-gp-zKi"/>
+                                    <constraint firstAttribute="bottom" secondItem="BKK-7H-uoy" secondAttribute="bottom" id="gOL-fQ-bKh"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="610" id="ggI-RO-dkk"/>
                                     <constraint firstAttribute="trailing" secondItem="104-iN-Bsu" secondAttribute="trailing" constant="40" id="iKM-0O-WGv"/>
-                                    <constraint firstAttribute="bottom" secondItem="BKK-7H-uoy" secondAttribute="bottom" id="inX-Bz-UJc"/>
                                     <constraint firstItem="104-iN-Bsu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sq9-jE-5n7" secondAttribute="leading" constant="20" symbolic="YES" id="ls3-3P-mdI"/>
                                     <constraint firstItem="104-iN-Bsu" firstAttribute="centerX" secondItem="sq9-jE-5n7" secondAttribute="centerX" id="nFE-9R-E8l"/>
-                                    <constraint firstItem="BKK-7H-uoy" firstAttribute="centerX" secondItem="sq9-jE-5n7" secondAttribute="centerX" id="o4C-4F-C9c"/>
-                                    <constraint firstItem="BKK-7H-uoy" firstAttribute="top" secondItem="104-iN-Bsu" secondAttribute="bottom" id="rxX-Nx-lj4"/>
-                                    <constraint firstItem="BKK-7H-uoy" firstAttribute="leading" secondItem="sq9-jE-5n7" secondAttribute="leading" constant="10" id="xTu-i2-Ihm"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -1418,6 +1436,7 @@
     </scenes>
     <resources>
         <image name="CalendarCustomized" width="42.666667938232422" height="42.666667938232422"/>
+        <image name="addCustomized" width="42.666667938232422" height="42.666667938232422"/>
         <image name="alarm.fill" catalog="system" width="123" height="128"/>
         <image name="calendarLogoCustomized" width="42.666667938232422" height="42.666667938232422"/>
         <image name="deleteCustomized" width="42.666667938232422" height="42.666667938232422"/>
@@ -1449,6 +1468,9 @@
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
