@@ -151,32 +151,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jMh-Hy-kMB">
-                                <rect key="frame" x="-8" y="0.0" width="401" height="57"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jMh-Hy-kMB" userLabel="title view">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="57"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AUR-4f-hty">
-                                        <rect key="frame" x="20" y="56" width="361" height="1"/>
-                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="1" id="4px-he-dTk"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="Uo7-Wu-tEy"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LdM-mt-Wae">
-                                        <rect key="frame" x="8" y="0.0" width="393" height="57"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LdM-mt-Wae" userLabel="embed view">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="57"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新建事件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRE-Id-C3b">
-                                                <rect key="frame" x="154.66666666666666" y="20" width="81.666666666666657" height="24"/>
+                                                <rect key="frame" x="146.66666666666666" y="20" width="100" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="USh-1u-sx1"/>
+                                                    <constraint firstAttribute="height" constant="24" id="ypU-6p-JAO"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRX-BY-5cn">
-                                                <rect key="frame" x="322.33333333333331" y="20" width="58.666666666666686" height="24"/>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRX-BY-5cn">
+                                                <rect key="frame" x="314.33333333333331" y="20" width="58.666666666666686" height="24"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="创建"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uE-s0-ePb">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uE-s0-ePb">
                                                 <rect key="frame" x="9.9999999999999964" y="15" width="58.666666666666657" height="34"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="取消">
@@ -186,12 +182,13 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="FRX-BY-5cn" secondAttribute="trailing" constant="12" id="ABR-Dr-E8s"/>
+                                            <constraint firstAttribute="trailing" secondItem="FRX-BY-5cn" secondAttribute="trailing" constant="20" id="ABR-Dr-E8s"/>
+                                            <constraint firstItem="vRE-Id-C3b" firstAttribute="centerX" secondItem="LdM-mt-Wae" secondAttribute="centerX" id="HmR-PR-Ugp"/>
                                             <constraint firstItem="FRX-BY-5cn" firstAttribute="centerY" secondItem="LdM-mt-Wae" secondAttribute="centerY" constant="3.5" id="KnT-dd-16d"/>
                                             <constraint firstItem="8uE-s0-ePb" firstAttribute="baseline" secondItem="FRX-BY-5cn" secondAttribute="baseline" id="V22-sa-J5z"/>
                                             <constraint firstItem="8uE-s0-ePb" firstAttribute="centerY" secondItem="LdM-mt-Wae" secondAttribute="centerY" constant="3.5" id="Yd0-gB-Cpb"/>
-                                            <constraint firstItem="vRE-Id-C3b" firstAttribute="leading" secondItem="8uE-s0-ePb" secondAttribute="trailing" constant="86.000000000000028" id="bHP-Rl-XCL"/>
-                                            <constraint firstItem="FRX-BY-5cn" firstAttribute="leading" secondItem="vRE-Id-C3b" secondAttribute="trailing" constant="85.999999999999915" id="jSR-u8-cKz"/>
+                                            <constraint firstItem="vRE-Id-C3b" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8uE-s0-ePb" secondAttribute="trailing" id="bHP-Rl-XCL"/>
+                                            <constraint firstItem="FRX-BY-5cn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vRE-Id-C3b" secondAttribute="trailing" id="jSR-u8-cKz"/>
                                             <constraint firstItem="FRX-BY-5cn" firstAttribute="top" secondItem="LdM-mt-Wae" secondAttribute="top" constant="20" id="qik-wG-WDM"/>
                                             <constraint firstItem="FRX-BY-5cn" firstAttribute="top" secondItem="vRE-Id-C3b" secondAttribute="top" id="slA-t2-39o"/>
                                             <constraint firstItem="8uE-s0-ePb" firstAttribute="leading" secondItem="LdM-mt-Wae" secondAttribute="leading" constant="10" id="ubo-0D-bjQ"/>
@@ -202,23 +199,39 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="AUR-4f-hty" firstAttribute="top" secondItem="jMh-Hy-kMB" secondAttribute="top" constant="56" id="5cT-Av-bpd"/>
                                     <constraint firstAttribute="trailing" secondItem="LdM-mt-Wae" secondAttribute="trailing" id="6H9-Dk-lON"/>
-                                    <constraint firstAttribute="trailing" secondItem="AUR-4f-hty" secondAttribute="trailing" constant="20" id="Ekj-Uy-T0d"/>
-                                    <constraint firstItem="AUR-4f-hty" firstAttribute="leading" secondItem="jMh-Hy-kMB" secondAttribute="leading" constant="20" id="guu-YJ-SbS"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="57" id="mEn-He-1M9"/>
+                                    <constraint firstItem="LdM-mt-Wae" firstAttribute="leading" secondItem="jMh-Hy-kMB" secondAttribute="leadingMargin" constant="-8" id="F5H-js-eIp"/>
+                                    <constraint firstItem="LdM-mt-Wae" firstAttribute="top" secondItem="jMh-Hy-kMB" secondAttribute="top" id="K1I-n4-o1s"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="393" id="mQe-io-WsL"/>
-                                    <constraint firstItem="LdM-mt-Wae" firstAttribute="bottom" secondItem="AUR-4f-hty" secondAttribute="bottom" id="w6g-GE-nlv"/>
-                                    <constraint firstItem="LdM-mt-Wae" firstAttribute="leading" secondItem="AUR-4f-hty" secondAttribute="leading" constant="-12" id="waB-gK-ErR"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AUR-4f-hty" userLabel="sep view">
+                                <rect key="frame" x="16" y="113" width="361" height="1"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="4px-he-dTk"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="Uo7-Wu-tEy"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWC-2c-h8A">
+                                <rect key="frame" x="16" y="122" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t78-oH-b1w"/>
                         <color key="backgroundColor" red="0.98039215800000001" green="0.98039215800000001" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="jMh-Hy-kMB" firstAttribute="top" secondItem="t78-oH-b1w" secondAttribute="top" id="4Bo-gb-HhH"/>
+                            <constraint firstAttribute="trailing" secondItem="jMh-Hy-kMB" secondAttribute="trailing" id="4pg-lZ-Wan"/>
+                            <constraint firstItem="AUR-4f-hty" firstAttribute="trailing" secondItem="GDN-sW-z5p" secondAttribute="trailingMargin" id="AQX-5T-aBt"/>
+                            <constraint firstItem="AUR-4f-hty" firstAttribute="top" secondItem="jMh-Hy-kMB" secondAttribute="bottom" constant="56" id="LUk-oM-BCD"/>
+                            <constraint firstItem="t78-oH-b1w" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pWC-2c-h8A" secondAttribute="trailing" symbolic="YES" id="LcO-cH-QDp"/>
+                            <constraint firstItem="jMh-Hy-kMB" firstAttribute="leading" secondItem="GDN-sW-z5p" secondAttribute="leading" id="Y6I-W2-pC9"/>
+                            <constraint firstItem="AUR-4f-hty" firstAttribute="leading" secondItem="GDN-sW-z5p" secondAttribute="leadingMargin" id="a2Q-lR-DwI"/>
                             <constraint firstItem="t78-oH-b1w" firstAttribute="bottom" secondItem="jMh-Hy-kMB" secondAttribute="bottom" constant="785" id="haa-A2-NnR"/>
-                            <constraint firstAttribute="trailing" secondItem="jMh-Hy-kMB" secondAttribute="trailing" id="pni-R1-6ZM"/>
-                            <constraint firstItem="jMh-Hy-kMB" firstAttribute="top" secondItem="t78-oH-b1w" secondAttribute="top" id="rDz-30-nLw"/>
+                            <constraint firstItem="pWC-2c-h8A" firstAttribute="leading" secondItem="AUR-4f-hty" secondAttribute="leading" id="l31-Xa-SSA"/>
+                            <constraint firstItem="pWC-2c-h8A" firstAttribute="top" secondItem="AUR-4f-hty" secondAttribute="bottom" constant="8" id="xLN-9e-FXZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hTm-xT-cre"/>
@@ -1549,6 +1562,9 @@
         </systemColor>
         <systemColor name="systemCyanColor">
             <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
